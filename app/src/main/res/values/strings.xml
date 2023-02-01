@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ActivityLifecycle</string>
+    <string name="main_activity_title">Hello! You are in MainActivity</string>
+    <string name="call_intent_dialog">Call Intent Dialog</string>
+    <string name="call_alert_dialog">Call Alert Dialog</string>
+    <string name="call_dialog">Call Dialog</string>
+</resources>
