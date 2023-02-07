@@ -1,2 +1,5 @@
 # ActivityLifecycle
 1. When a dialog is opened from an activity, what are the lifecycle states that the activity will go through?
+* If dialog is created using AlertDialogBuilder or Dialog class, there will be no change in the activity lifecycle. onPause() will not be called in this case. These dialogs are always tied up to the calling activity. Dialog cannot be visible if the activity is not running. 
+onPause() is called when the activity is no longer at the top of the activity stack. A Dialog by itself is not an Activity, so will not replace the current Activity at the top of the stack and hence will not cause anything to pause.
+* onPause() will only be called when you are calling another activity as dialog (using dialog theme, or an activity which does not cover full screen). In this case, displaying the dialog-as-an-Activity will cause the new Activity to be on the top of the stack, pausing what previously was there. Calling activity will go into pause state when intent dialog is called and intent dialog will go through - onCreate(), onStart(), onResume(), onPostResume().
