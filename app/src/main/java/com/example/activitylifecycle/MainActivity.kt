@@ -43,6 +43,15 @@ class MainActivity : AppCompatActivity() {
             callDialog()
         }
 
+        binding.fragmentActivityBtn.setOnClickListener {
+            callFragmentActivity()
+        }
+
+    }
+
+    private fun callFragmentActivity() {
+        val intent = Intent(this, FragmentActivity::class.java)
+        startActivity(intent)
     }
 
     private fun callDialog() {
