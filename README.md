@@ -12,7 +12,7 @@ onPause() is called when the activity is no longer at the top of the activity st
 
 4. What will be the sequence of lifecycle states when you go from Activity A to Activity B?
 * Activity A - onPause()
-* Activity B - onCreate()
+** Activity B - onCreate()
 * Activity B - onStart()
 * Activity B - onPause()
 * Activity A - onStop()
