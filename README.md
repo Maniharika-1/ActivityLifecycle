@@ -31,17 +31,17 @@ onPause() is called when the activity is no longer at the top of the activity st
 * onPause() then onStop()
 
 7. What will be the sequence of lifecycle states of Activity and Fragment when a dialog as an activity is called in the onCreate() of a fragment?
-*
- * Fragment - onAttach()
- * Fragment - onCreate()
- * Activity - onCreate()
- * Fragment - onCreateView()
- * Fragment - onViewCreated()
- * Fragment - onActivityCreated()
- * Fragment - onStart()
- * Activity - onStart()
- * Activity - onResume()
- * Fragment - onResume()
- * Fragment - onPause()
- * Activity - onPause()
+* 
+  * Fragment - onAttach()
+  * Fragment - onCreate()
+  * Activity - onCreate()
+  * Fragment - onCreateView()
+  * Fragment - onViewCreated()
+  * Fragment - onActivityCreated()
+  * Fragment - onStart()
+  * Activity - onStart()
+  * Activity - onResume()
+  * Fragment - onResume()
+  * Fragment - onPause()
+  * Activity - onPause()
 
