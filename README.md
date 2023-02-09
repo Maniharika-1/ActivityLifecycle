@@ -44,3 +44,4 @@ onPause() is called when the activity is no longer at the top of the activity st
  * Fragment - onResume()
  * Fragment - onPause()
  * Activity - onPause()
+
