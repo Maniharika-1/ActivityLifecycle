@@ -11,19 +11,21 @@ onPause() is called when the activity is no longer at the top of the activity st
 * No change in activity lifecycle state. onPause() will not be called as current activity will still be on top of the stack even though notification bar is dragged.
 
 4. What will be the sequence of lifecycle states when you go from Activity A to Activity B?
-* Activity A - onPause()
-** Activity B - onCreate()
-* Activity B - onStart()
-* Activity B - onPause()
-* Activity A - onStop()
+* 
+  * Activity A - onPause()
+  * Activity B - onCreate()
+  * Activity B - onStart()
+  * Activity B - onPause()
+  * Activity A - onStop()
 
 5. What will be the sequence of lifecycle states when you go from Activity B to Activity A with back button?
-* Activity B - onPause()
-* Activity A - onRestart()
-* Activity A - onStart()
-* Activity A - onResume()
-* Activity B - onStop()
-* Activity B - onDestroy()
+* 
+  * Activity B - onPause()
+  * Activity A - onRestart()
+  * Activity A - onStart()
+  * Activity A - onResume()
+  * Activity B - onStop()
+  * Activity B - onDestroy()
 
 6. What will be the sequence of lifecycle states when you navigate to recents or launcher when your activity is open?
 * onPause() then onStop()
